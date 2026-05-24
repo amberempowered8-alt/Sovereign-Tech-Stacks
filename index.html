@@ -21,7 +21,7 @@
 
                 <div class="form-group">
                     <label for="client-name">Your Full Name / Entity Represented</label>
-                    <input type="text" id="client-name" name="name" required placeholder="e.g., Amber Jackson">
+                    <input type="text" id="client-name" name="name" required placeholder="e.g., Daisy Weeber">
                 </div>
 
                 <div class="form-email">
@@ -60,12 +60,22 @@
                     </label>
                 </div>
 
+               <div class="form-group">
+                    <label for="timeline">Desired Launch Window</label>
+                    <select id="timeline" name="timeline" required>
+                        <option value="">-- Select Your Timeline --</option>
+                        <option value="standard_7_days">Standard Deployment (7 Business Days - Guarded Queue)</option>
+                        <option value="flexible">Flexible (My asset pipeline is still fueling)</option>
+                    </select>
+                </div>
+
                 <div class="form-group">
-                    <label for="budget">Investment Allocation (Custom Baseline Starts at $950)</label>
+                    <label for="budget">Investment & Billing Structure (Custom Baseline Starts at $950)</label>
                     <select id="budget" name="budget" required>
-                        <option value="">-- Select Budget Tier --</option>
-                        <option value="ready_950">I am ready to allocate the $950+ custom framework investment</option>
-                        <option value="not_ready">My budget is under $950 (Route me to the DIY Launchpad Blueprint for $150)</option>
+                        <option value="">-- Select Financial Tier --</option>
+                        <option value="pay_in_full">Custom Build: Ready to Pay in Full ($950+ for maximum velocity)</option>
+                        <option value="deposit_475">Custom Build: 50% Deposit ($475 initialization / $475 on delivery)</option>
+                        <option value="not_ready">Budget under $950: Route me to the DIY Launchpad Package ($150)</option>
                     </select>
                 </div>
 
